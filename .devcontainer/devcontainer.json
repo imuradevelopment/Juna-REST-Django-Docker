@@ -1,0 +1,11 @@
+{
+    "name": "juna-backend-devcontainer",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "web",
+    "workspaceFolder": "/usr/src/app",
+    "shutdownAction": "stopCompose",
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ]
+}

@@ -1,0 +1,25 @@
+{% load i18n %}
+
+{% block subject %}
+【{{ site_name }}】- アカウント登録(完了)
+{% endblock %}
+
+{% block text_body %}
+ようこそ{{ site_name }}へ
+
+アカウントが使用可能になりました。
+
+当サイトをご利用いただきありがとうございます。
+
+{{ site_name }}管理者より
+{% endblock text_body %}
+
+{% block html_body %}
+<p>ようこそ{{ site_name }}へ</p>
+
+<p>アカウントが使用可能になりました。</p>
+
+<p>当サイトをご利用いただきありがとうございます。</p>
+
+<p>{{ site_name }}管理者より</p>
+{% endblock html_body %}

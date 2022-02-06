@@ -1,0 +1,32 @@
+{% load i18n %}
+
+{% block subject %}
+【{{ site_name }}】- アカウント登録
+{% endblock subject %}
+
+{% block text_body %}
+ようこそ{{ site_name }}へ
+
+{{ site_name }}を利用するためには、アカウントをアクティブにする必要があります。
+
+以下のページにアクセスして、アカウントを有効にしてください。
+{{ protocol }}://{{ domain }}/{{ url|safe }}
+
+当サイトをご利用いただきありがとうございます。
+
+{{ site_name }}管理者より
+{% endblock text_body %}
+
+{% block html_body %}
+<p>ようこそ{{ site_name }}へ</p>
+
+<p>{{ site_name }}を利用するためには、アカウントをアクティブにする必要があります。</p>
+
+<p>以下のページにアクセスして、アカウントを有効にしてください。</p>
+<p><a href="{{ protocol }}://{{ domain }}/{{ url|safe }}">{{ protocol }}://{{ domain }}/{{ url|safe }}</a></p>
+
+<p>当サイトをご利用いただきありがとうございます。</p>
+
+<p>{{ site_name }}管理者より</p>
+
+{% endblock html_body %}
